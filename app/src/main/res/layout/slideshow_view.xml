@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:background="@color/grey"
+    tools:context=".PhotoView">
+
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="62dp"
+        android:gravity="center"
+        android:text="@string/slshow"
+        android:textColor="@color/white"
+        android:textSize="20sp" />
+
+    <ImageView
+        android:id="@+id/displayImage"
+        android:layout_width="match_parent"
+        android:layout_height="257dp" />
+
+    <TextView
+        android:id="@+id/slideshowCaption"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="16sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/lastPhoto"
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:text="Prev"
+            app:icon="@android:drawable/ic_media_previous"
+            app:iconGravity="textStart" />
+
+        <Button
+            android:id="@+id/nextPhoto"
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_marginHorizontal="10dp"
+            android:layout_weight="1.0"
+            android:paddingRight="16dp"
+            android:text="Next"
+            app:icon="@android:drawable/ic_media_next"
+            app:iconGravity="textEnd" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

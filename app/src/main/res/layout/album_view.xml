@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey"
+    android:orientation="vertical"
+    tools:context=".AlbumView">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/photoList"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="8dp" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/addPhoto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="bottom|right"
+        android:clickable="true"
+        android:focusable="true"
+        app:backgroundTint="@color/bold_pink"
+        app:srcCompat="@android:drawable/ic_input_add"
+        app:useCompatPadding="true" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/slideshow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/addPhoto"
+        android:layout_alignParentRight="true"
+        android:layout_gravity="bottom|right"
+        android:clickable="true"
+        android:focusable="true"
+        app:backgroundTint="@color/bold_pink"
+        app:srcCompat="@android:drawable/ic_media_ff"
+        app:useCompatPadding="true" />
+
+    <Spinner
+        android:id="@+id/dropdown"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:theme="@style/Theme.AndroidPhotos83.Spinner"
+        android:overlapAnchor="false"
+        android:visibility="gone"
+        >
+    </Spinner>
+
+
+</RelativeLayout>
